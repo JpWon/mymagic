@@ -8,7 +8,7 @@ const person = {
     },
     role:      'Business Intelligence Engineer',
     avatar:    '/images/jp.jpeg',
-    location:  'Orlando/Florida/United States',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+    location:  'America/New_York',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
     languages: ['English']  // optional: Leave the array empty if you don't want to display languages
 }
 
@@ -60,7 +60,7 @@ const about = {
     },
     calendar: {
         display: true,
-        link: 'https://cal.com'
+        link: 'https://cal.com/de-primus1/30min'
     },
     intro: {
         display: true,
@@ -126,7 +126,7 @@ const about = {
         title: 'Studies',
         institutions: [
             {
-                name: 'Florida Gulg Coast Unviersity',
+                name: 'Florida Gulf Coast University',
                 description: <>Bachelor of Science, Business Management (Entrepreneurship Concentration)</>,
             },
             {
