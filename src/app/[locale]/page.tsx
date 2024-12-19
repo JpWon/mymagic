@@ -14,8 +14,8 @@ export async function generateMetadata(
 ) {
 	const t = await getTranslations();
     const { home } = renderContent(t);
-	const title = home.title;
-	const description = home.description;
+	const title = "Jerrold Primus | Business Intelligence Engineer, Data Analyst, and Entrepreneur";
+    const description = "Welcome to the professional profile of Jerrold Primus, a seasoned Business Intelligence Engineer, Data Analyst, and Entrepreneur.";
 	const ogImage = `https://${baseURL}/og?title=${encodeURIComponent(title)}`;
 
 	return {
@@ -74,6 +74,27 @@ export default function Home(
 					}),
 				}}
 			/>
+			<script
+  type="application/ld+json"
+  suppressHydrationWarning
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Jerrold Primus",
+      "jobTitle": "Business Intelligence Engineer, Data Analyst, Entrepreneur",
+      "url": `https://${baseURL}`,
+      "image": `${baseURL}${person.avatar}`,
+      "description": "Jerrold Primus is a professional Business Intelligence Engineer, Data Analyst, and Entrepreneur with extensive experience in data-driven decision making.",
+      "sameAs": [
+        "https://www.linkedin.com/in/jprimus1/",
+		"https://www.amazon.com/stores/DirectAudio/DirectAudio/page/AB4B8C74-A11F-483D-84F3-EE055669C5FB?ref_=cm_sw_r_cp_ud_ast_store_20KR7W0X3WT93DDR46FM",
+		'https://www.facebook.com/directaudioapp/'
+        // Add other social media or professional profiles if available
+      ]
+    }),
+  }}
+/>
 			<Flex
 				fillWidth
 				direction="column"
