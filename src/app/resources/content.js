@@ -1,21 +1,21 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-    firstName: 'Selene',
-    lastName:  'Yu',
+    firstName: 'Jerrold',
+    lastName:  'Primus',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role:      'Design Engineer',
-    avatar:    '/images/avatar.jpg',
-    location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+    role:      'Business Intelligence Engineer',
+    avatar:    '/images/jp.jpeg',
+    location:  'Orlando/Florida/United States',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+    languages: ['English']  // optional: Leave the array empty if you don't want to display languages
 }
 
 const newsletter = {
     display: true,
     title: <>Subscribe to {person.firstName}'s Newsletter</>,
-    description: <>I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering.</>
+    description: <>"I specialize in transforming complex datasets into clear, actionable insights that empower organizations to make data-driven, strategic decisions, driving measurable business outcomes."</>
 }
 
 const social = [
@@ -24,22 +24,18 @@ const social = [
     {
         name: 'GitHub',
         icon: 'github',
-        link: 'https://github.com/once-ui-system/nextjs-starter',
+        link: 'https://github.com/JpWon',
     },
     {
         name: 'LinkedIn',
         icon: 'linkedin',
-        link: 'https://www.linkedin.com/company/once-ui/',
+        link: 'https://www.linkedin.com/in/jprimus1/',
     },
-    {
-        name: 'X',
-        icon: 'x',
-        link: '',
-    },
+    
     {
         name: 'Email',
         icon: 'email',
-        link: 'mailto:example@gmail.com',
+        link: 'mailto:jmprimus1@gmail.com',
     },
 ]
 
@@ -47,8 +43,8 @@ const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Design engineer and builder</>,
-    subline: <>I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
+    headline: <>Business Intelligence Engineer, Data Analyst, and Entrepreneur</>,
+    subline: <> Jerrold (J.P.) Primus – Driving innovation through data insights and strategic solutions."</>
 }
 
 const about = {
@@ -69,38 +65,59 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Selene is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>
+        description: <>I am an experienced data professional specializing in data analysis, system integration, and process automation. Through recent independent projects with startups, I have enhanced my expertise in SQL, AWS architecture, and Tableau, creating customized solutions that boost operational efficiency and foster business growth. As a Google-certified Business Intelligence Professional, I stay at the forefront of industry standards, combining technical proficiency with a commitment to delivering impactful insights.</>
     },
     work: {
         display: true, // set to false to hide this section
         title: 'Work Experience',
         experiences: [
             {
-                company: 'FLY',
-                timeframe: '2022 - Present',
-                role: 'Senior Design Engineer',
+                company: 'Travel & Leisure Co.',
+                timeframe: 'Nov 2022 - Mar 2023',
+                role: 'Senior System Integrations Analyst',
                 achievements: [
-                    <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
-                    <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
+                    <>Identified and corrected data inaccuracies in Global Rental Operations portfolio tables using SQL, merging and updating database tables to establish a consistent and reliable source for accurate reporting.</>,
+                    <>Managed integration projects to align a global property portfolio with major online travel agency platforms, enhancing business revenue.</>,
+                    <>Increased operational efficiency by automating essential tasks using Microsoft Automate.</>,
+                    <>Ensured seamless integration for newly onboarded OTAs by configuring and maintaining channel management systems.</>
                 ],
-                images: [ // optional: leave the array empty if you don't want to display images
-                    {
-                        src: '/images/projects/project-01/cover-01.jpg',
-                        alt: 'Once UI Project',
-                        width: 16,
-                        height: 9
-                    }
-                ]
+                images: []
             },
             {
-                company: 'Creativ3',
-                timeframe: '2018 - 2022',
-                role: 'Lead Designer',
+                company: 'Trajector',
+                timeframe: 'Jul 2021 - Dec 2021',
+                role: 'KPI Analyst',
                 achievements: [
-                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
-                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
+                    <>Analyzed business productivity and database systems, proposing architecture solutions compliant with AWS standards.</>,
+                    <>Investigated report discrepancies using SQL, identified naming inaccuracies, and created a validation formula revealing $1 million in actionable invoices.</>,
+                    <>Collaborated with department heads to develop a standardized reporting system, resulting in increased productivity.</>,
+                    <>Improved data accuracy and user experience by implementing user-friendly dashboards for error reduction.</>
                 ],
-                images: [ ]
+                images: []
+            },
+            {
+                company: 'Amazon.com',
+                timeframe: 'Sep 2016 - Jun 2021',
+                role: 'ACES Operations Analyst',
+                achievements: [
+                    <>Developed and launched a KPI leadership application, resulting in a weekly time saving of 15,000 hours.</>,
+                    <>Led project teams in automating workflow processes with custom VBA scripts, enhancing efficiency in KPI reporting.</>,
+                    <>Utilized SQL and MicroStrategy for research and analysis, delivering over 10 weekly reports to identify and address operational inefficiencies.</>,
+                    <>Executed a detailed inventory analysis on return SKUs with QR codes, culminating in a global report that offered solutions for supply chain improvement.</>,
+                    <>Created an Excel-based shift planning tool to manage over 170,000 data points, optimizing resource allocation and shift operations.</>
+                ],
+                images: []
+            },
+            {
+                company: 'Direct Audio™ Inc.',
+                timeframe: 'Feb 2014 - Dec 2023',
+                role: 'Founder & CEO',
+                achievements: [
+                    <>Developed mobile applications compatible with major platforms, achieving a US Patent for innovative live audio multicasting technology.</>,
+                    <>Led a team of six developers, fostering a collaborative and efficient work environment.</>,
+                    <>Drove user adoption of applications, resulting in a user base expansion to over 50,000 individuals.</>
+                ],
+                images: []
             }
         ]
     },
@@ -109,12 +126,14 @@ const about = {
         title: 'Studies',
         institutions: [
             {
-                name: 'University of Jakarta',
-                description: <>Studied software engineering.</>,
+                name: 'Florida Gulg Coast Unviersity',
+                description: <>Bachelor of Science, Business Management (Entrepreneurship Concentration)</>,
             },
             {
-                name: 'Build the Future',
-                description: <>Studied online marketing and personal branding.</>,
+                name: 'Seminole State College of Florida',
+                description: <>Bachelor of Science in Information Systems Technology (B.S.I.S.T.)
+
+                Specializations: Cyber Security </>,
             }
         ]
     },
