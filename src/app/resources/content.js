@@ -21,11 +21,12 @@ const newsletter = {
 const social = [
     // Links are automatically displayed.
     // Import new icons in /once-ui/icons.ts
-    {
-        name: 'GitHub',
-        icon: 'github',
-        link: 'https://github.com/JpWon',
-    },
+    //{
+    //    name: 'GitHub',
+    //    icon: 'github',
+    //    link: 'https://github.com/JpWon',
+    //},
+    
     {
         name: 'LinkedIn',
         icon: 'linkedin',
@@ -65,7 +66,7 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>I am an experienced data professional specializing in data analysis, system integration, and process automation. Through recent independent projects with startups, I have enhanced my expertise in SQL, AWS architecture, and Tableau, creating customized solutions that boost operational efficiency and foster business growth. As a Google-certified Business Intelligence Professional, I stay at the forefront of industry standards, combining technical proficiency with a commitment to delivering impactful insights.</>
+        description: <>I'm an experienced data professional specializing in data analysis, system integration, and process automation. Through recent independent projects with startups, I have enhanced my expertise in SQL, AWS architecture, and Tableau, creating customized solutions that boost operational efficiency and foster business growth. As a Google-certified Business Intelligence Professional, I stay at the forefront of industry standards, combining technical proficiency with a commitment to delivering impactful insights.</>
     },
     work: {
         display: true, // set to false to hide this section
@@ -140,28 +141,30 @@ const about = {
             {
                 name: 'Seminole State College of Florida',
                 description: <>Bachelor of Science in Information Systems Technology (B.S.I.S.T.)
-
-                Specializations: Cyber Security </>,
+            <br />
+            Specializations: Cyber Security
+            <br />
+            Completed coursework toward degree, 90% finished, was cancelled due to COVID.(expected graduation was 2020). </>,
             }
         ]
     },
     technical: {
         display: true, // set to false to hide this section
-        title: 'Technical skills',
+        title: 'Technical Certifications',
         skills: [
             {
-                title: 'Figma',
-                description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+                title: 'Google-certified Business Intelligence Professional',
+                description: <> & Google AI Essentials</>,
                 // optional: leave the array empty if you don't want to display images
                 images: [
                     {
-                        src: '/images/projects/project-01/cover-02.jpg',
+                        src: '/images/Certs/bi.jpg',
                         alt: 'Project image',
                         width: 16,
                         height: 9
                     },
                     {
-                        src: '/images/projects/project-01/cover-03.jpg',
+                        src: '/images/Certs/Ai.jpg',
                         alt: 'Project image',
                         width: 16,
                         height: 9
@@ -169,12 +172,12 @@ const about = {
                 ]
             },
             {
-                title: 'Next.js',
-                description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+                title: 'AWS Certified',
+                description: <> AWS Technical & Business Professional</>,
                 // optional: leave the array empty if you don't want to display images
                 images: [
                     {
-                        src: '/images/projects/project-01/cover-04.jpg',
+                        src: '/images/Certs/aws.png',
                         alt: 'Project image',
                         width: 16,
                         height: 9

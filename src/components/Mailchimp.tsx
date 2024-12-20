@@ -10,7 +10,7 @@ export const Mailchimp = ({ newsletter }) => {
 
     return (
         <Flex
-            style={{overflow: 'hidden'}}
+            style={{ overflow: 'hidden' }}
             position="relative" fillWidth padding="xl" radius="l" marginBottom="m"
             direction="column" alignItems="center" align="center"
             background="surface" border="neutral-medium" borderStyle="solid-1">
@@ -21,7 +21,8 @@ export const Mailchimp = ({ newsletter }) => {
                 dots={mailchimp.effects.dots as any}
                 lines={mailchimp.effects.lines as any}
             />
-            <Heading style={{position: 'relative'}}
+            <Heading
+                style={{ position: 'relative' }}
                 marginBottom="s"
                 variant="display-strong-xs">
                 {newsletter.title}
@@ -39,9 +40,10 @@ export const Mailchimp = ({ newsletter }) => {
             
             {/* Embed the iframe and script here */}
             <div
-                style={{width: '100%'}}
+                style={{ width: '100%' }}
                 dangerouslySetInnerHTML={{
-                    __html: `<iframe style="border:none;width:100%;" id="subscribe-to-jerrolds-newsletter-iapqec" src="https://opnform.com/forms/subscribe-to-jerrolds-newsletter-iapqec"></iframe>
+                    __html: `
+                    <iframe style="border:none;width:100%;height:calc(1.33 * 100%);" id="subscribe-to-jerrolds-newsletter-iapqec" src="https://opnform.com/forms/subscribe-to-jerrolds-newsletter-iapqec"></iframe>
                     <script type="text/javascript" onload="initEmbed('subscribe-to-jerrolds-newsletter-iapqec')" src="https://opnform.com/widgets/iframe.min.js"></script>`
                 }}
             />
