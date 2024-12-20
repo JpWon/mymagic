@@ -72,6 +72,24 @@ const about = {
         title: 'Work Experience',
         experiences: [
             {
+                company: 'Direct Audio™ Inc.',
+                timeframe: 'Feb 2014 - Dec 2023',
+                role: 'Founder & CEO',
+                achievements: [
+                    <>Developed mobile applications compatible with major platforms, achieving a US Patent for innovative live audio multicasting technology.</>,
+                    <>Led a team of six developers, fostering a collaborative and efficient work environment.</>,
+                    <>Drove user adoption of applications, resulting in a user base expansion to over 50,000 individuals.</>
+                ],
+                images: [
+                    {
+                        src: '/public/images/DA.jpeg',                         
+                        width: 8,
+                        height: 8
+                    },
+                ]
+            },
+
+            {
                 company: 'Travel & Leisure Co.',
                 timeframe: 'Nov 2022 - Mar 2023',
                 role: 'Senior System Integrations Analyst',
@@ -107,18 +125,7 @@ const about = {
                     <>Created an Excel-based shift planning tool to manage over 170,000 data points, optimizing resource allocation and shift operations.</>
                 ],
                 images: []
-            },
-            {
-                company: 'Direct Audio™ Inc.',
-                timeframe: 'Feb 2014 - Dec 2023',
-                role: 'Founder & CEO',
-                achievements: [
-                    <>Developed mobile applications compatible with major platforms, achieving a US Patent for innovative live audio multicasting technology.</>,
-                    <>Led a team of six developers, fostering a collaborative and efficient work environment.</>,
-                    <>Drove user adoption of applications, resulting in a user base expansion to over 50,000 individuals.</>
-                ],
-                images: []
-            }
+            }            
         ]
     },
     studies: {
