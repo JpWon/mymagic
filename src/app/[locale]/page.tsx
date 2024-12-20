@@ -88,6 +88,7 @@ export default function Home(
       "description": "Jerrold Primus is a professional Business Intelligence Engineer, Data Analyst, and Entrepreneur with extensive experience in data-driven decision making.",
       "sameAs": [
         "https://www.linkedin.com/in/jprimus1/",
+		"https://www.coursera.org/learner/primus1",
 		"https://www.amazon.com/stores/DirectAudio/DirectAudio/page/AB4B8C74-A11F-483D-84F3-EE055669C5FB?ref_=cm_sw_r_cp_ud_ast_store_20KR7W0X3WT93DDR46FM",
 		'https://www.facebook.com/directaudioapp/'
         // Add other social media or professional profiles if available
