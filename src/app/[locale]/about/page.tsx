@@ -262,26 +262,33 @@ export default function About(
                                                 </Text>
                                             ))}
                                         </Flex>
-                                        {experience.images.length > 0 && (
+                                        {Array.isArray(experience.images) && experience.images.length > 0 ? (
                                             <Flex
                                                 fillWidth paddingTop="m" paddingLeft="40"
                                                 wrap>
                                                 {experience.images.map((image, index) => (
-                                                    <Flex
-                                                        key={index}
-                                                        border="neutral-medium"
-                                                        borderStyle="solid-1"
-                                                        radius="m"
-                                                        minWidth={image.width} height={image.height}>
-                                                        <SmartImage
-                                                            enlarge
+                                                    // Check if image has required properties
+                                                    image.width && image.height && image.src ? (
+                                                        <Flex
+                                                            key={index}
+                                                            border="neutral-medium"
+                                                            borderStyle="solid-1"
                                                             radius="m"
-                                                            sizes={image.width.toString()}
-                                                            alt={image.alt}
-                                                            src={image.src}/>
-                                                    </Flex>
+                                                            minWidth={image.width} height={image.height}>
+                                                            <SmartImage
+                                                                enlarge
+                                                                radius="m"
+                                                                sizes={image.width.toString()}
+                                                                alt={image.alt || 'Image'} // Fallback alt text
+                                                                src={image.src}/>
+                                                        </Flex>
+                                                    ) : (
+                                                        <div key={index}>Invalid image data</div> // Handle invalid image data
+                                                    )
                                                 ))}
                                             </Flex>
+                                        ) : (
+                                            <div>No images available</div> // Handle case with no images
                                         )}
                                     </Flex>
                                 ))}
