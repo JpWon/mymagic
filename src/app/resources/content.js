@@ -82,7 +82,7 @@ const about = {
                 ],
                 images: [
                     {
-                        src: '/public/images/DA.jpeg',                         
+                        src: '/images/DA.jpeg',                         
                         width: 8,
                         height: 8
                     },
