@@ -1,6 +1,14 @@
 ---
-title: "Simple portfolio creator built with Once UI and Next.js"
+title: "Full Stack Web Development"
 publishedAt: "2024-04-08"
 images:
   - "/images/projects/project-01/video-01.mp4" 
+
+  
 ---
+
+team:
+  - name: "Jerrold Primus"
+    role: "Website Engineer"
+    avatar: "/images/jp.jpeg"
+    Client Site: "https://www.polyculturevegan.com/"
