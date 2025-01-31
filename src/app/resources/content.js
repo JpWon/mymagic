@@ -66,7 +66,11 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>I'm an experienced data professional specializing in data analysis, system integration, and process automation. Through recent independent projects with startups, I have enhanced my expertise in SQL, AWS architecture, and Tableau, creating customized solutions that boost operational efficiency and foster business growth. As a Google-certified Business Intelligence Professional, I stay at the forefront of industry standards, combining technical proficiency with a commitment to delivering impactful insights.</>
+        description: <>Experienced data professional specializing in data analysis, system integration, and process automation. Recently, I have 
+focused on freelance full-stack web development and fine-tuning large language models (LLMs), delivering tailored 
+solutions that drive operational efficiency and business growth. As a Google-certified Business Intelligence Professional, 
+I combine technical expertise with a commitment to impactful insights, excelling in creating dashboards and effectively 
+communicating data-driven strategies to stakeholders.</>
     },
     work: {
         display: true, // set to false to hide this section
